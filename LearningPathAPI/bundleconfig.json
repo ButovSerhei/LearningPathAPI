@@ -1,0 +1,42 @@
+﻿[
+  {
+    "outputFileName": "wwwroot/css/all.min.css",
+    "inputFiles": [
+      "wwwroot/css/fontawesome/awesome.min.css",
+      "wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "wwwroot/lib/bootstrap/dist/css/bootstrap-select.min.css",
+      "wwwroot/lib/bootstrap/dist/css/bootstrap-datepicker.css",
+      //"wwwroot/css/normalize.css",
+      "wwwroot/css/site.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/all.min.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery/dist/jquery.js",
+      "wwwroot/lib/jquery/dist/sortable.js",
+      "wwwroot/lib/bootstrap/dist/js/popper.min.js",
+      "wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "wwwroot/lib/bootstrap/dist/js/bootstrap-select.min.js",
+      "wwwroot/lib/bootstrap/dist/js/bootstrap-datepicker.min.js",
+      "wwwroot/lib/lodash/lodash.min.js",
+      "wwwroot/lib/moment/moment.min.js",
+      "wwwroot/lib/vue/vue.js",
+      "wwwroot/lib/vue/axios.min.js",
+      "wwwroot/lib/vue/validators.min.js",
+      "wwwroot/lib/vue/vuelidate.min.js",
+      "wwwroot/lib/vue/v-calendar.min.js",
+      "wwwroot/lib/vue/sl-vue-tree.js",
+      "wwwroot/lib/vue/vue-sortable.js",
+      "wwwroot/lib/vue/vue-the-mask.js",
+      "wwwroot/lib/vue/vue-tel-input.js",
+      "wwwroot/lib/vue/vue-clickaway.min.js",
+      "wwwroot/lib/bootstrap-vue/dist/bootstrap-vue.min.js",
+      "wwwroot/js/site.js"
+    ],
+    "minify": {
+      "enabled": false,
+      "renameLocals": true
+    }
+  }
+]
