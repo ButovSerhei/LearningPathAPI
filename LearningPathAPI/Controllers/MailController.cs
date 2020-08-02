@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 
 namespace LearningPathApi.WebApplication.Controllers
 {
+   
     public class MailController : Controller
     {
         private readonly ISmtpManager _smtpManager;
@@ -19,7 +20,9 @@ namespace LearningPathApi.WebApplication.Controllers
         {
             _smtpManager = smtpManager;
         }
-        
+
+
+        [HttpPost]
         public ActionResult GetMail(Mail model)
         {
             bool isSuccess = false;

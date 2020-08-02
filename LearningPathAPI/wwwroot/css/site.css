@@ -1,0 +1,416 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+
+/* ---------- Loader ---------- */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 4em;
+    height: 4em;
+    -webkit-animation: spin 2s linear infinite alternate;
+    -moz-animation: spin 2s linear infinite alternate;
+    -ms-animation: spin 2s linear infinite alternate;
+    -o-animation: spin 2s linear infinite alternate;
+    animation: spin 2s linear infinite alternate; /* this comes last */
+}
+
+/* ---------- Loader ---------- */
+.loader-inside {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 4em;
+    height: 4em;
+    -webkit-animation: spin 2s linear infinite alternate;
+    -moz-animation: spin 2s linear infinite alternate;
+    -ms-animation: spin 2s linear infinite alternate;
+    -o-animation: spin 2s linear infinite alternate;
+    animation: spin 2s linear infinite alternate; /* this comes last */
+}
+
+/* ---------- Loader ---------- */
+.loader-inside-small {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 2em;
+    height: 2em;
+    -webkit-animation: spin 2s linear infinite alternate;
+    -moz-animation: spin 2s linear infinite alternate;
+    -ms-animation: spin 2s linear infinite alternate;
+    -o-animation: spin 2s linear infinite alternate;
+    animation: spin 2s linear infinite alternate; /* this comes last */
+}
+
+.loader-inside-super-small {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 1em;
+    height: 1em;
+    margin-left: 5px;
+    -webkit-animation: spin 2s linear infinite alternate;
+    -moz-animation: spin 2s linear infinite alternate;
+    -ms-animation: spin 2s linear infinite alternate;
+    -o-animation: spin 2s linear infinite alternate;
+    animation: spin 2s linear infinite alternate; /* this comes last */
+}
+
+.loader-icon-button {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 1em;
+    height: 1em;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    margin-left: -2px;
+    margin-right: -2px;
+    -webkit-animation: spin 2s linear infinite alternate;
+    -moz-animation: spin 2s linear infinite alternate;
+    -ms-animation: spin 2s linear infinite alternate;
+    -o-animation: spin 2s linear infinite alternate;
+    animation: spin 2s linear infinite alternate; /* this comes last */
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bg-as-table-primary {
+    /*border-color: #7abaff;*/
+    background-color: #9fcdff;
+}
+
+.bg-as-table-success {
+    /*border-color: #b1dfbb;*/
+    background-color: #c3e6cb;
+}
+
+.bg-as-table-info {
+    /*border-color: #86cfda;*/
+    background-color: #bee5eb;
+}
+
+.bg-as-table-warning {
+    /*border-color: #ffdf7e;*/
+    background-color: #ffeeba;
+}
+
+.bg-as-table-danger {
+    /*border-color: #ed969e;*/
+    background-color: #f5c6cb;
+}
+
+
+
+.bg-video {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    min-width: 100%;
+}
+
+.bg-holder {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    will-change: transform, opacity, filter;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+    .bg-holder.bg-right {
+        left: auto;
+        right: 0;
+    }
+
+    .bg-holder.overlay:before {
+        position: absolute;
+        content: '';
+        background: rgba(0, 0, 0, 0.25);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .bg-holder.overlay-primary:before {
+        background: rgba(44, 123, 229, 0.4);
+    }
+
+    .bg-holder.overlay-info:before {
+        background: rgba(39, 188, 253, 0.4);
+    }
+
+    .bg-holder.overlay-success:before {
+        background: rgba(0, 210, 122, 0.4);
+    }
+
+    .bg-holder.overlay-warning:before {
+        background: rgba(245, 128, 62, 0.4);
+    }
+
+    .bg-holder.overlay-danger:before {
+        background: rgba(230, 55, 87, 0.4);
+    }
+
+    .bg-holder.overlay-0:before {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .bg-holder.overlay-1:before {
+        background: rgba(0, 0, 0, 0.55);
+    }
+
+    .bg-holder.overlay-2:before {
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .bg-holder .bg-video {
+        position: absolute;
+        display: block;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        -o-object-fit: cover;
+        object-fit: cover;
+        height: 100%;
+        min-width: 100%;
+    }
+
+    .bg-holder .bg-youtube {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.has-parallax {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-glass {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.avatar-profile {
+    position: absolute;
+    bottom: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+}
+
+.overlay-icon {
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.cover-image-file-input {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.25rem 0.5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.83333rem;
+    color: #fff;
+    border: 1px solid #d8e2ef;
+    -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.cover-image:hover .cover-image-file-input {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.avatar:hover .overlay-icon {
+    opacity: 1;
+}
+
+.flex-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+    .svg-inline--fa.fa-w-16 {
+        width: 1em;
+    }
+
+.fit-cover {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.z-index-0 {
+    z-index: 0;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.z-index-10 {
+    z-index: 10;
+}
+
+.contact-icon {
+    pointer-events: none;
+    cursor: none;
+    width: 42px;
+}
+
+.pretend-with-icon {
+    padding: 0;
+    border: none;
+    border-radius: 0px;
+    background-color: #ffffff;
+}
+
+
+.fa-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

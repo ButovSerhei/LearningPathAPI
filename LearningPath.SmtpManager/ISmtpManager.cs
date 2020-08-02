@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace LearningPath.SmtpManager
 {
 
-    public interface ISmtpManager : IDisposable
+    public interface ISmtpManager
     {
 
         /// <summary>
