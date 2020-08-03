@@ -80,6 +80,11 @@ namespace LearningPathApi.WebApplication
                 options.Level = CompressionLevel.Fastest;
             });
 
+            services.Configure<IISServerOptions>(options =>                         //SB (03-08-2020): this service for building project on iis
+            {
+                options.AutomaticAuthentication = false;
+            });
+
             services.AddResponseCaching();
 
             services.AddControllers();
@@ -109,6 +114,7 @@ namespace LearningPathApi.WebApplication
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
+           
 
             app.UseMvc(routes =>
             {

@@ -23,7 +23,7 @@ namespace LearningPathApi.WebApplication.Controllers
 
 
         [HttpPost]
-        public ActionResult GetMail(Mail model)
+        public ActionResult Send(Mail model)
         {
             bool isSuccess = false;
             string message = string.Empty;
