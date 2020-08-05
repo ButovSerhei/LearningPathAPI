@@ -66,7 +66,6 @@ namespace LearningPath.SmtpManager
         {
             try
             {
-                //_smtpClient.EnableSsl = false;
                 if (!IsEmailValid(to)) throw new ArgumentException("recipients. Email wrong format");
                 var mail = BuildMessage(subject, body);
                 if (!string.IsNullOrEmpty(_displayName))

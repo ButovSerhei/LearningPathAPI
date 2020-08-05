@@ -4,6 +4,7 @@ using System.IO.Compression;
 using System.Linq;
 using LearningPath.SmtpManager;
 using LearningPathApi.WebApplication.MiddleWare;
+using Microsoft.AspNetCore.Authentication.Certificate;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -37,6 +38,10 @@ namespace LearningPathApi.WebApplication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages().AddRazorRuntimeCompilation();
+
+            services.AddAuthentication(
+        CertificateAuthenticationDefaults.AuthenticationScheme)
+        .AddCertificate();
 
             services.AddSession(options =>
             {
@@ -109,12 +114,11 @@ namespace LearningPathApi.WebApplication
             app.UseHttpsRedirection();
             app.UseResponseCompression();
             app.UseStaticFiles();
+            //app.UseHsts();
 
             app.UseSession();
             app.UseRouting();
             app.UseAuthentication();
-            app.UseAuthorization();
-           
 
             app.UseMvc(routes =>
             {
